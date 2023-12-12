@@ -116,7 +116,7 @@ function init() {
   const light = new THREE.AmbientLight(0xffffff);
   scene.add(light);
 
-  loader.load('./public/amayaCITY.glb',function(gltf){
+  loader.load('./public/city.glb',function(gltf){
     let city = gltf.scene
     scene.add(city)
     city.traverse(function(glb){
